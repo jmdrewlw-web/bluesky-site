@@ -13,26 +13,111 @@
 .art-hero{padding:7rem 1.5rem 3rem;background:var(--black);text-align:center;position:relative}.art-hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.15),transparent)}.art-phase{font-size:.48rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:.6rem}.art-hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;line-height:1.08;color:#fff;letter-spacing:-.025em;margin-bottom:.4rem}.art-hero p{font-size:.95rem;font-weight:400;color:var(--sl);max-width:500px;margin:0 auto}
 .art-body{max-width:680px;margin:0 auto;padding:3rem 1.5rem 4rem}
 .art-back{display:inline-flex;align-items:center;gap:.4rem;font-size:.6rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sky);margin-bottom:2rem;transition:gap .3s var(--e)}.art-back:hover{gap:.7rem}
-.art-body .coming{text-align:center;padding:2rem 0}.art-body .coming h2{font-size:1.3rem;font-weight:700;color:var(--td);margin-bottom:.5rem}.art-body .coming p{font-size:.9rem;color:var(--tb);line-height:1.7;margin-bottom:1.5rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f);font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#5AADE8,#3B8DD4 50%,#2E7BC0);padding:.85rem 1.4rem;border-radius:6px;box-shadow:0 4px 15px rgba(74,159,229,.3);transition:all .4s var(--e)}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(74,159,229,.4)}
 .ft{background:var(--black);padding:2.5rem 1.5rem;text-align:center;border-top:1px solid rgba(255,255,255,.04)}.ft-w{font-size:.85rem;font-weight:800;color:rgba(255,255,255,.35);margin-bottom:.5rem}.ft-w span{color:rgba(74,159,229,.5)}.ft-e{display:block;font-size:.78rem;color:rgba(154,172,191,.6);margin-bottom:.25rem}.ft-a{font-size:.62rem;color:rgba(154,172,191,.35);margin-bottom:.6rem;display:block}.ft-c{font-size:.48rem;color:rgba(154,172,191,.2)}
 @media(min-width:768px){.nav{padding:1.2rem 4rem}.n-links{display:flex}.n-tog{display:none}.n-w{font-size:1.5rem}.n-d{height:28px}.n-s-top{font-size:.44rem}.n-s-bot{font-size:.44rem}.art-hero{padding:8rem 4rem 3.5rem}.art-body{padding:3.5rem 4rem 5rem}.ft{padding:3rem 4rem;display:flex;justify-content:space-between;align-items:flex-end;text-align:left}}
+.art-intro{font-size:1.02rem;line-height:1.82;color:#4A5568;margin-bottom:2rem}
+.art-h2{font-size:1.18rem;font-weight:700;color:#0A1628;letter-spacing:-.02em;margin:2.25rem 0 .65rem;padding-top:2rem;border-top:1px solid rgba(74,159,229,.1)}
+.art-h3{font-size:.95rem;font-weight:600;color:#0A1628;margin:1.5rem 0 .4rem}
+.art-p{font-size:.92rem;line-height:1.78;color:#4A5568;margin-bottom:.9rem}
+.art-ol{margin:.5rem 0 1rem 1.3rem}
+.art-ol li{font-size:.9rem;line-height:1.68;color:#4A5568;margin-bottom:.55rem}
+.art-ol li strong{color:#0A1628}
+.art-ul{margin:.5rem 0 1rem 0;list-style:none;padding:0}
+.art-ul li{font-size:.9rem;line-height:1.68;color:#4A5568;margin-bottom:.45rem;padding-left:1.2rem;position:relative}
+.art-ul li::before{content:"\2192";position:absolute;left:0;color:#4A9FE5;font-size:.8rem;top:.05rem}
+.callout{background:#06101F;border-radius:10px;padding:1.4rem 1.6rem;margin:1.75rem 0}
+.callout p{font-size:.91rem;font-weight:500;color:rgba(255,255,255,.82);line-height:1.65;margin:0;font-style:italic}
+.hl-box{border-left:3px solid #4A9FE5;background:#F7FAFD;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0}
+.hl-box p{font-size:.87rem;line-height:1.72;color:#4A5568;margin:0}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.2),transparent);margin:2rem 0}
+.art-cta{background:#06101F;border-radius:12px;padding:2rem 1.75rem;text-align:center;margin-top:2.5rem}
+.art-cta h3{font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:.4rem;letter-spacing:-.01em}
+.art-cta p{font-size:.83rem;color:#7A8A9F;margin-bottom:1.2rem;line-height:1.6}
+.q-label{font-size:.52rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sky);margin-bottom:.5rem;display:block}
 </style></head><body>
 <nav class="nav"><a href="/" class="n-logo"><div class="n-w">Blue<span>Sky</span></div><div class="n-d"></div><div class="n-s"><span class="n-s-top">Development</span><span class="n-s-bot">Services</span></div></a><div class="n-tog" onclick="document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></div><ul class="n-links" id="nl"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/expansion-intelligence" class="act">Insights</a></li><li><a href="mailto:Connect@BlueSky.RealEstate">Contact</a></li><li><a href="/expansion-readiness-brief" class="n-cta">Get Started</a></li></ul></nav>
+
 <section class="art-hero">
 <div class="art-phase"><span class="pl"></span>Clarify<span class="pl r"></span></div>
 <h1>The Expansion Readiness Assessment</h1>
 <p>25 Questions Before You Build</p>
 </section>
+
 <div class="art-body">
 <a href="/expansion-intelligence" class="art-back"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to Expansion Intelligence</a>
-<div class="coming">
-<h2>Full article coming soon.</h2>
-<p>This framework is part of our Expansion Intelligence library. The full-length article with actionable frameworks, real-world examples, and downloadable resources is being finalized.</p>
-<p>In the meantime, get a tailored assessment for your expansion.</p>
-<a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+
+<p class="art-intro">Before you talk to a lender, hire an architect, or sign a letter of intent on a site, there are questions you need to be able to answer. Not because a bank will ask them &mdash; though they will &mdash; but because the discipline of answering them honestly is what separates operators who expand successfully from those who expand prematurely and spend years paying for it. Work through these 25 questions before you commit a dollar.</p>
+
+<h2 class="art-h2">Financial Readiness (Questions 1&ndash;7)</h2>
+<ol class="art-ol">
+  <li><strong>What is your current DSCR, and what will it be after the proposed debt service is added?</strong> Most commercial lenders require a minimum of 1.20&ndash;1.25x. Know this number before your first lender conversation.</li>
+  <li><strong>How much liquidity will you retain after your down payment?</strong> A facility that drains your reserves to zero creates operational fragility. You need working capital buffer beyond the down payment.</li>
+  <li><strong>What is your personal net worth relative to the loan amount?</strong> Lenders assess personal guarantee capacity. Understand your position before you are sitting across from an underwriter.</li>
+  <li><strong>Have you stress-tested your revenue projection at 80% of your current run rate?</strong> Your pro forma should remain serviceable even if the first year underperforms.</li>
+  <li><strong>Do you have a clean 3-year tax return history that reflects the business you are financing?</strong> Lenders underwrite to documented income, not projected income.</li>
+  <li><strong>Have you modeled the interest rate at current levels, not the rate from two years ago?</strong> Rate environment matters significantly to deal viability.</li>
+  <li><strong>Do you understand all-in project cost, including soft costs, contingency, and financing fees &mdash; not just the hard construction bid?</strong> All-in cost is typically 25&ndash;35% above the general contractor number.</li>
+</ol>
+
+<div class="hl-box">
+  <p>If you cannot confidently answer questions 1 through 7, stop here. Financial clarity is the prerequisite for everything else. Unresolved financial questions do not get easier once you are under contract on land or in the middle of a design process.</p>
 </div>
+
+<h2 class="art-h2">Market &amp; Demand (Questions 8&ndash;13)</h2>
+<ol class="art-ol" start="8">
+  <li><strong>Can you document that current patient or customer demand consistently exceeds your current capacity?</strong> Expansion should be a response to proven, sustained demand &mdash; not an expectation that demand will materialize after you build.</li>
+  <li><strong>Have you analyzed the demographic trends in your target trade area over a 5-year horizon?</strong> Population growth, age distribution, and income levels all affect long-term viability.</li>
+  <li><strong>Who are your direct competitors within a 3-mile radius, and are any of them expanding?</strong> A competitor in the middle of a buildout changes your market assumptions.</li>
+  <li><strong>Is your proposed location accessible and visible to your target patient or customer profile?</strong> Traffic patterns, ingress/egress, and co-tenancy all affect how many people you realistically attract.</li>
+  <li><strong>Have you surveyed or otherwise validated that your existing patients or customers would follow you to a new location?</strong> Distance and route changes affect patient retention more than most operators expect.</li>
+  <li><strong>Is there any regulatory change &mdash; reimbursement, licensing, or Certificate of Need &mdash; that could materially affect your market within your debt service horizon?</strong></li>
+</ol>
+
+<h2 class="art-h2">Operational Readiness (Questions 14&ndash;19)</h2>
+<ol class="art-ol" start="14">
+  <li><strong>Does your current operation run consistently without requiring your constant direct involvement?</strong> A major capital project demands significant owner attention. If the core business requires you for daily stability, adding a buildout will strain both.</li>
+  <li><strong>Do you have a management layer that can hold operations steady during a construction and transition period?</strong></li>
+  <li><strong>Have you planned for the revenue disruption of a relocation or expansion opening?</strong> Most practices and service businesses see a 30&ndash;90 day dip in production during the transition period.</li>
+  <li><strong>Do you have a staffing plan for the expanded capacity?</strong> More space only generates more revenue if you have the team to fill it. Hiring takes time &mdash; usually more than operators expect.</li>
+  <li><strong>Is your current technology and equipment infrastructure adequate for the new facility, or will there be significant additional capital expenditure?</strong></li>
+  <li><strong>Have you identified who will manage the construction project on a day-to-day basis, and do they have the capacity?</strong></li>
+</ol>
+
+<div class="callout">
+  <p>"The operators who struggle most after expansion are rarely those who built the wrong building. They are those who built the right building at the wrong time &mdash; when the business was not yet ready to absorb the distraction, the debt, or the growing pains of a larger operation."</p>
 </div>
+
+<h2 class="art-h2">Site &amp; Project Specific (Questions 20&ndash;25)</h2>
+<ol class="art-ol" start="20">
+  <li><strong>Is the site properly zoned for your intended use, and if not, what is the path and timeline to rezoning or a special use permit?</strong> Zoning issues that surface after you are under contract are expensive to resolve and not always solvable.</li>
+  <li><strong>Has a Phase I Environmental Site Assessment been completed on the site?</strong> Environmental contamination on a site you own becomes your liability. This is a non-negotiable due diligence item.</li>
+  <li><strong>Does the site have adequate parking for your intended use under local code requirements?</strong> Parking deficiencies frequently cannot be engineered around and can stop a project entirely.</li>
+  <li><strong>Have you confirmed utility availability and capacity &mdash; water, sewer, gas, electrical &mdash; sufficient for your planned program?</strong></li>
+  <li><strong>Do you have a realistic all-in timeline from groundbreaking to opening, and have you planned your finances around that timeline including carrying costs?</strong> Most projects take 3&ndash;6 months longer than the initial estimate.</li>
+  <li><strong>Have you identified and interviewed at least two experienced developers or design-build firms with specific experience in your facility type?</strong> The team you select determines whether the project stays on schedule and on budget more than any other single variable.</li>
+</ol>
+
+<h2 class="art-h2">How to Use Your Score</h2>
+<p class="art-p">Go through these 25 questions and mark each one as clearly resolved, partially resolved, or unresolved. Any unresolved question is a gap you need to close before committing. Partially resolved answers deserve honest scrutiny &mdash; "we think so" is not the same as "we know."</p>
+<p class="art-p">A business with 20 or more clearly resolved answers is typically ready to move forward into formal site selection, lender conversations, and design engagement. A business with 10 or more unresolved answers needs to address those gaps first &mdash; not because bureaucracy demands it, but because those unresolved items are the places where projects fail.</p>
+<ul class="art-ul">
+  <li>Financial gaps: resolve before approaching lenders</li>
+  <li>Market gaps: resolve before committing to a specific site</li>
+  <li>Operational gaps: resolve before signing a construction contract</li>
+  <li>Site gaps: resolve before removing contingencies from a purchase agreement</li>
+</ul>
+
+<div class="divider"></div>
+
+<div class="art-cta">
+  <h3>Work Through These Questions With a Specialist</h3>
+  <p>Our Expansion Readiness Brief guides you through a structured assessment of your project &mdash; financial position, site viability, and operational readiness &mdash; before you commit to anything.</p>
+  <a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+</div>
+
+</div>
+
 <footer class="ft"><div><div class="ft-w">Blue<span>Sky</span></div><a href="mailto:Connect@BlueSky.RealEstate" class="ft-e">Connect@BlueSky.RealEstate</a><span class="ft-a">480 Duke Drive Suite 200, Franklin, TN 37067</span></div><div class="ft-c">&copy; 2026 BlueSky Development Services</div></footer>
 <script>document.querySelectorAll(".n-links a:not(.n-cta)").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nl").classList.remove("open")})})</script>
 </body></html>

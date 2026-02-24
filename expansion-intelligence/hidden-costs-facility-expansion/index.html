@@ -13,26 +13,132 @@
 .art-hero{padding:7rem 1.5rem 3rem;background:var(--black);text-align:center;position:relative}.art-hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.15),transparent)}.art-phase{font-size:.48rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:.6rem}.art-hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;line-height:1.08;color:#fff;letter-spacing:-.025em;margin-bottom:.4rem}.art-hero p{font-size:.95rem;font-weight:400;color:var(--sl);max-width:500px;margin:0 auto}
 .art-body{max-width:680px;margin:0 auto;padding:3rem 1.5rem 4rem}
 .art-back{display:inline-flex;align-items:center;gap:.4rem;font-size:.6rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sky);margin-bottom:2rem;transition:gap .3s var(--e)}.art-back:hover{gap:.7rem}
-.art-body .coming{text-align:center;padding:2rem 0}.art-body .coming h2{font-size:1.3rem;font-weight:700;color:var(--td);margin-bottom:.5rem}.art-body .coming p{font-size:.9rem;color:var(--tb);line-height:1.7;margin-bottom:1.5rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f);font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#5AADE8,#3B8DD4 50%,#2E7BC0);padding:.85rem 1.4rem;border-radius:6px;box-shadow:0 4px 15px rgba(74,159,229,.3);transition:all .4s var(--e)}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(74,159,229,.4)}
 .ft{background:var(--black);padding:2.5rem 1.5rem;text-align:center;border-top:1px solid rgba(255,255,255,.04)}.ft-w{font-size:.85rem;font-weight:800;color:rgba(255,255,255,.35);margin-bottom:.5rem}.ft-w span{color:rgba(74,159,229,.5)}.ft-e{display:block;font-size:.78rem;color:rgba(154,172,191,.6);margin-bottom:.25rem}.ft-a{font-size:.62rem;color:rgba(154,172,191,.35);margin-bottom:.6rem;display:block}.ft-c{font-size:.48rem;color:rgba(154,172,191,.2)}
 @media(min-width:768px){.nav{padding:1.2rem 4rem}.n-links{display:flex}.n-tog{display:none}.n-w{font-size:1.5rem}.n-d{height:28px}.n-s-top{font-size:.44rem}.n-s-bot{font-size:.44rem}.art-hero{padding:8rem 4rem 3.5rem}.art-body{padding:3.5rem 4rem 5rem}.ft{padding:3rem 4rem;display:flex;justify-content:space-between;align-items:flex-end;text-align:left}}
+.art-intro{font-size:1.02rem;line-height:1.82;color:#4A5568;margin-bottom:2rem}
+.art-h2{font-size:1.18rem;font-weight:700;color:#0A1628;letter-spacing:-.02em;margin:2.25rem 0 .65rem;padding-top:2rem;border-top:1px solid rgba(74,159,229,.1)}
+.art-p{font-size:.92rem;line-height:1.78;color:#4A5568;margin-bottom:.9rem}
+.art-ul{margin:.5rem 0 1rem 0;list-style:none;padding:0}
+.art-ul li{font-size:.9rem;line-height:1.68;color:#4A5568;margin-bottom:.45rem;padding-left:1.2rem;position:relative}
+.art-ul li::before{content:"\2192";position:absolute;left:0;color:#4A9FE5;font-size:.8rem;top:.05rem}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.75rem;margin:1.75rem 0}
+.stat-card{background:#F0F6FD;border-radius:8px;padding:1rem 1.1rem;border:1px solid rgba(74,159,229,.1)}
+.stat-n{font-size:1.45rem;font-weight:800;color:#4A9FE5;letter-spacing:-.03em;line-height:1.1}
+.stat-l{font-size:.69rem;font-weight:500;color:#4A5568;margin-top:.2rem;line-height:1.35}
+.callout{background:#06101F;border-radius:10px;padding:1.4rem 1.6rem;margin:1.75rem 0}
+.callout p{font-size:.91rem;font-weight:500;color:rgba(255,255,255,.82);line-height:1.65;margin:0;font-style:italic}
+.hl-box{border-left:3px solid #4A9FE5;background:#F7FAFD;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0}
+.hl-box p{font-size:.87rem;line-height:1.72;color:#4A5568;margin:0}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.2),transparent);margin:2rem 0}
+.cites{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(0,0,0,.06)}
+.cites-h{font-size:.54rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#9AACBF;margin-bottom:.65rem}
+.cites ol{margin-left:1rem}
+.cites li{font-size:.66rem;color:#9AACBF;line-height:1.6;margin-bottom:.25rem}
+.art-cta{background:#06101F;border-radius:12px;padding:2rem 1.75rem;text-align:center;margin-top:2.5rem}
+.art-cta h3{font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:.4rem;letter-spacing:-.01em}
+.art-cta p{font-size:.83rem;color:#7A8A9F;margin-bottom:1.2rem;line-height:1.6}
 </style></head><body>
 <nav class="nav"><a href="/" class="n-logo"><div class="n-w">Blue<span>Sky</span></div><div class="n-d"></div><div class="n-s"><span class="n-s-top">Development</span><span class="n-s-bot">Services</span></div></a><div class="n-tog" onclick="document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></div><ul class="n-links" id="nl"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/expansion-intelligence" class="act">Insights</a></li><li><a href="mailto:Connect@BlueSky.RealEstate">Contact</a></li><li><a href="/expansion-readiness-brief" class="n-cta">Get Started</a></li></ul></nav>
+
 <section class="art-hero">
 <div class="art-phase"><span class="pl"></span>Plan<span class="pl r"></span></div>
 <h1>The Hidden Costs of Facility Expansion</h1>
 <p>And How to Budget for Them</p>
 </section>
+
 <div class="art-body">
 <a href="/expansion-intelligence" class="art-back"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to Expansion Intelligence</a>
-<div class="coming">
-<h2>Full article coming soon.</h2>
-<p>This framework is part of our Expansion Intelligence library. The full-length article with actionable frameworks, real-world examples, and downloadable resources is being finalized.</p>
-<p>In the meantime, get a tailored assessment for your expansion.</p>
-<a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+
+<p class="art-intro">When a contractor hands you a bid for a new facility, that number represents one slice of what you will actually spend. Experienced developers budget 25 to 35 percent above the hard construction cost to account for everything the GC bid does not include. First-time owner-operators who discover this gap during construction &mdash; rather than before &mdash; end up scrambling for additional capital at the worst possible moment. This is the complete picture of what a facility expansion actually costs.</p>
+
+<h2 class="art-h2">Hard Costs vs. Soft Costs: The Distinction That Matters</h2>
+<p class="art-p">Hard costs are the bricks-and-mortar expenses: labor, materials, site work, mechanical, electrical, and plumbing systems. These are what general contractors bid on. Soft costs are everything else &mdash; the professional fees, permits, financing costs, and transition expenses that are just as real but far less visible in the early stages of planning.</p>
+<p class="art-p">Most first-time developers have a reasonably good intuition about hard costs because those are the numbers contractors quote them. Soft costs are where budgets routinely blow up, because they accumulate across many small line items from many different vendors, and no single party is responsible for pulling the full picture together.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-n">8&ndash;15%</div>
+    <div class="stat-l">Soft costs as a share of total project cost for medical and specialty facility buildouts</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-n">10%</div>
+    <div class="stat-l">Minimum contingency reserve recommended on any commercial construction project</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-n">$35&ndash;75/sf</div>
+    <div class="stat-l">Typical FF&amp;E budget range for healthcare and specialty service facilities, depending on program</div>
+  </div>
 </div>
+
+<h2 class="art-h2">Soft Costs: The Full Inventory</h2>
+<p class="art-p">Soft costs encompass a broad set of professional fees and project expenses that are easy to underestimate because they are paid to many different parties over many months. A complete soft cost budget should include all of the following:</p>
+<ul class="art-ul">
+  <li><strong>Architecture and engineering fees:</strong> Typically 6&ndash;10% of hard construction cost for medical and specialty facility design. Fees vary significantly based on complexity and whether the firm has experience in your specific facility type.</li>
+  <li><strong>Civil engineering and surveying:</strong> Site plan preparation, grading plans, utility coordination, and boundary surveys for new construction projects.</li>
+  <li><strong>Geotechnical report:</strong> Required by most lenders and structural engineers; tests subsurface soil conditions to inform foundation design.</li>
+  <li><strong>Phase I Environmental Site Assessment:</strong> Required by virtually all commercial lenders; identifies recognized environmental conditions on the site.</li>
+  <li><strong>Permit and impact fees:</strong> Building permits, plan review fees, utility connection fees, and in some jurisdictions, development impact fees that can run tens of thousands of dollars.</li>
+  <li><strong>Project management and owner's representative fees:</strong> If you hire a development manager or owner's rep, budget 2&ndash;5% of total project cost.</li>
+  <li><strong>Legal fees:</strong> Real estate purchase, loan documentation, contractor agreement review, and any zoning or variance matters.</li>
+  <li><strong>Loan origination and financing fees:</strong> Lender origination fees, appraisal, title insurance, and closing costs, typically 1.5&ndash;3% of the loan amount.</li>
+</ul>
+
+<h2 class="art-h2">FF&amp;E: The Budget Item That Surprises Everyone</h2>
+<p class="art-p">Furniture, Fixtures &amp; Equipment &mdash; FF&amp;E &mdash; is the single most commonly underestimated line item in facility development budgets. The general contractor builds the shell and the infrastructure. Everything that goes inside &mdash; clinical equipment, reception furniture, technology systems, signage, window treatments &mdash; is FF&amp;E and is your responsibility to budget and procure separately.</p>
+<p class="art-p">For a medical or dental facility, FF&amp;E is not cosmetic spending. Clinical equipment alone &mdash; dental chairs, imaging systems, sterilization equipment, exam room equipment &mdash; can easily represent $500,000 or more for a mid-sized practice. Add technology infrastructure (server room, networking, phone systems, practice management software hardware), patient-facing technology, specialty lighting and furniture for clinical spaces, and exterior signage, and the FF&amp;E budget for a well-equipped facility routinely exceeds the cost of the construction contingency.</p>
+
+<div class="hl-box">
+  <p>Equipment lead times have extended significantly in recent years. Major clinical equipment &mdash; imaging systems in particular &mdash; now commonly requires 4&ndash;8 months from order to installation. This means equipment decisions need to be made and orders placed well before the building is complete, often while you are still in design development.</p>
 </div>
+
+<h2 class="art-h2">Carrying Costs During Construction</h2>
+<p class="art-p">One of the most overlooked cost categories is the financial drag of the construction period itself. During the months between breaking ground and opening day, you are paying for the project without yet generating revenue from it. These carrying costs include:</p>
+<ul class="art-ul">
+  <li><strong>Construction loan interest:</strong> Most construction loans are structured as interest-only during the build period. On a $3 million loan at current rates, that is $15,000&ndash;$20,000 per month in interest before a single patient is seen.</li>
+  <li><strong>Dual overhead:</strong> If you are continuing to operate at your existing location during construction, you are carrying rent or lease costs at the old space while paying construction loan interest on the new one.</li>
+  <li><strong>Pre-opening staffing:</strong> Hiring and training new staff for expanded capacity before the facility opens. These payroll costs often begin 30&ndash;60 days before opening day.</li>
+  <li><strong>Move and transition costs:</strong> Physical relocation, data migration, new patient communication campaigns, temporary signage, and any revenue lost during the transition window.</li>
+</ul>
+
+<div class="callout">
+  <p>"The first time a developer sees a true all-in project cost &mdash; hard costs, soft costs, FF&amp;E, and carrying costs together &mdash; it is almost always higher than they expected. The second time, they build that full number into their pro forma from day one and make a much cleaner decision."</p>
+</div>
+
+<h2 class="art-h2">Contingency: The Reserve You Must Not Skip</h2>
+<p class="art-p">Construction projects encounter the unexpected. Unforeseen subsurface conditions, material price increases, design changes discovered during construction, and coordination issues between trades are not exceptions &mdash; they are standard features of commercial construction. The question is not whether you will need a contingency; it is whether you budgeted for one.</p>
+<p class="art-p">A 10% hard cost contingency is the minimum acceptable reserve for ground-up construction. For renovation projects or projects on sites with unknown subsurface conditions, 15% is more appropriate. This reserve should be funded, not theoretical &mdash; meaning it should be part of your loan proceeds or cash reserves, not a line item you plan to cover with revenue from the business if things go sideways.</p>
+
+<h2 class="art-h2">Building the Complete Budget</h2>
+<p class="art-p">A rigorous all-in project budget has five components, each estimated with appropriate specificity before you commit to any lender or contractor:</p>
+<ul class="art-ul">
+  <li><strong>Hard costs:</strong> Based on contractor bids or preliminary cost estimates from a qualified construction cost estimator</li>
+  <li><strong>Soft costs:</strong> Based on confirmed fee proposals from your architect, engineer, and legal counsel, plus permit fee schedules from the municipality</li>
+  <li><strong>FF&amp;E:</strong> Based on equipment specifications from your clinical or operational team, with vendor quotes for major items</li>
+  <li><strong>Carrying costs:</strong> Calculated from your construction schedule and loan terms, including dual overhead where applicable</li>
+  <li><strong>Contingency:</strong> A minimum of 10% of hard costs, held as real reserves</li>
+</ul>
+<p class="art-p">When these five components are added together, most operators find that the all-in number is 30&ndash;40% above the initial GC estimate they received. That is not a problem if you planned for it. It becomes a very serious problem if you did not.</p>
+
+<div class="divider"></div>
+
+<div class="cites">
+  <div class="cites-h">Sources &amp; References</div>
+  <ol>
+    <li>Soft cost percentages and FF&amp;E ranges reflect BlueSky's project experience across medical, dental, and specialty service facility developments. Actual costs vary by project size, market, and program complexity.</li>
+    <li>Equipment lead time estimates reflect current market conditions and are subject to change based on supply chain conditions and manufacturer backlogs.</li>
+    <li>Contingency reserve recommendations are consistent with standard commercial construction risk management guidance from the Construction Management Association of America.</li>
+  </ol>
+</div>
+
+<div class="art-cta">
+  <h3>Build a Complete Budget Before You Commit</h3>
+  <p>Our Expansion Readiness Brief helps you develop a realistic all-in cost picture &mdash; so your financing is sized correctly and your business is protected from the surprises that derail underprepared projects.</p>
+  <a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+</div>
+
+</div>
+
 <footer class="ft"><div><div class="ft-w">Blue<span>Sky</span></div><a href="mailto:Connect@BlueSky.RealEstate" class="ft-e">Connect@BlueSky.RealEstate</a><span class="ft-a">480 Duke Drive Suite 200, Franklin, TN 37067</span></div><div class="ft-c">&copy; 2026 BlueSky Development Services</div></footer>
 <script>document.querySelectorAll(".n-links a:not(.n-cta)").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nl").classList.remove("open")})})</script>
 </body></html>

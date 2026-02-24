@@ -13,26 +13,145 @@
 .art-hero{padding:7rem 1.5rem 3rem;background:var(--black);text-align:center;position:relative}.art-hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.15),transparent)}.art-phase{font-size:.48rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:.6rem}.art-hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;line-height:1.08;color:#fff;letter-spacing:-.025em;margin-bottom:.4rem}.art-hero p{font-size:.95rem;font-weight:400;color:var(--sl);max-width:500px;margin:0 auto}
 .art-body{max-width:680px;margin:0 auto;padding:3rem 1.5rem 4rem}
 .art-back{display:inline-flex;align-items:center;gap:.4rem;font-size:.6rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sky);margin-bottom:2rem;transition:gap .3s var(--e)}.art-back:hover{gap:.7rem}
-.art-body .coming{text-align:center;padding:2rem 0}.art-body .coming h2{font-size:1.3rem;font-weight:700;color:var(--td);margin-bottom:.5rem}.art-body .coming p{font-size:.9rem;color:var(--tb);line-height:1.7;margin-bottom:1.5rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f);font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#5AADE8,#3B8DD4 50%,#2E7BC0);padding:.85rem 1.4rem;border-radius:6px;box-shadow:0 4px 15px rgba(74,159,229,.3);transition:all .4s var(--e)}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(74,159,229,.4)}
 .ft{background:var(--black);padding:2.5rem 1.5rem;text-align:center;border-top:1px solid rgba(255,255,255,.04)}.ft-w{font-size:.85rem;font-weight:800;color:rgba(255,255,255,.35);margin-bottom:.5rem}.ft-w span{color:rgba(74,159,229,.5)}.ft-e{display:block;font-size:.78rem;color:rgba(154,172,191,.6);margin-bottom:.25rem}.ft-a{font-size:.62rem;color:rgba(154,172,191,.35);margin-bottom:.6rem;display:block}.ft-c{font-size:.48rem;color:rgba(154,172,191,.2)}
 @media(min-width:768px){.nav{padding:1.2rem 4rem}.n-links{display:flex}.n-tog{display:none}.n-w{font-size:1.5rem}.n-d{height:28px}.n-s-top{font-size:.44rem}.n-s-bot{font-size:.44rem}.art-hero{padding:8rem 4rem 3.5rem}.art-body{padding:3.5rem 4rem 5rem}.ft{padding:3rem 4rem;display:flex;justify-content:space-between;align-items:flex-end;text-align:left}}
+.art-intro{font-size:1.02rem;line-height:1.82;color:#4A5568;margin-bottom:2rem}
+.art-h2{font-size:1.18rem;font-weight:700;color:#0A1628;letter-spacing:-.02em;margin:2.25rem 0 .65rem;padding-top:2rem;border-top:1px solid rgba(74,159,229,.1)}
+.art-h3{font-size:.95rem;font-weight:600;color:#0A1628;margin:1.5rem 0 .4rem}
+.art-p{font-size:.92rem;line-height:1.78;color:#4A5568;margin-bottom:.9rem}
+.art-ul{margin:.5rem 0 1rem 0;list-style:none;padding:0}
+.art-ul li{font-size:.9rem;line-height:1.68;color:#4A5568;margin-bottom:.45rem;padding-left:1.2rem;position:relative}
+.art-ul li::before{content:"\2192";position:absolute;left:0;color:#4A9FE5;font-size:.8rem;top:.05rem}
+.art-ol{margin:.5rem 0 1rem 1.3rem}
+.art-ol li{font-size:.9rem;line-height:1.68;color:#4A5568;margin-bottom:.4rem}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.75rem;margin:1.75rem 0}
+.stat-card{background:#F0F6FD;border-radius:8px;padding:1rem 1.1rem;border:1px solid rgba(74,159,229,.1)}
+.stat-n{font-size:1.45rem;font-weight:800;color:#4A9FE5;letter-spacing:-.03em;line-height:1.1}
+.stat-l{font-size:.69rem;font-weight:500;color:#4A5568;margin-top:.2rem;line-height:1.35}
+.callout{background:#06101F;border-radius:10px;padding:1.4rem 1.6rem;margin:1.75rem 0}
+.callout p{font-size:.91rem;font-weight:500;color:rgba(255,255,255,.82);line-height:1.65;margin:0;font-style:italic}
+.hl-box{border-left:3px solid #4A9FE5;background:#F7FAFD;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0}
+.hl-box p{font-size:.87rem;line-height:1.72;color:#4A5568;margin:0}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.2),transparent);margin:2rem 0}
+.cites{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(0,0,0,.06)}
+.cites-h{font-size:.54rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#9AACBF;margin-bottom:.65rem}
+.cites ol{margin-left:1rem}
+.cites li{font-size:.66rem;color:#9AACBF;line-height:1.6;margin-bottom:.25rem}
+.art-cta{background:#06101F;border-radius:12px;padding:2rem 1.75rem;text-align:center;margin-top:2.5rem}
+.art-cta h3{font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:.4rem;letter-spacing:-.01em}
+.art-cta p{font-size:.83rem;color:#7A8A9F;margin-bottom:1.2rem;line-height:1.6}
 </style></head><body>
 <nav class="nav"><a href="/" class="n-logo"><div class="n-w">Blue<span>Sky</span></div><div class="n-d"></div><div class="n-s"><span class="n-s-top">Development</span><span class="n-s-bot">Services</span></div></a><div class="n-tog" onclick="document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></div><ul class="n-links" id="nl"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/expansion-intelligence" class="act">Insights</a></li><li><a href="mailto:Connect@BlueSky.RealEstate">Contact</a></li><li><a href="/expansion-readiness-brief" class="n-cta">Get Started</a></li></ul></nav>
+
 <section class="art-hero">
 <div class="art-phase"><span class="pl"></span>Evaluate<span class="pl r"></span></div>
 <h1>Capital Stack Strategy</h1>
 <p>Funding Growth Without Giving Away the Business</p>
 </section>
+
 <div class="art-body">
 <a href="/expansion-intelligence" class="art-back"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to Expansion Intelligence</a>
-<div class="coming">
-<h2>Full article coming soon.</h2>
-<p>This framework is part of our Expansion Intelligence library. The full-length article with actionable frameworks, real-world examples, and downloadable resources is being finalized.</p>
-<p>In the meantime, get a tailored assessment for your expansion.</p>
-<a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+
+<p class="art-intro">When most business owners think about funding a facility expansion, they picture a single loan from a bank. In reality, you have more tools available than you may realize &mdash; and how you layer those tools determines how much of your business you keep, how much cash you preserve, and how much operational flexibility you maintain for years to come. That layered structure is called your capital stack, and understanding it is one of the most important things you can do before you sign anything.</p>
+
+<h2 class="art-h2">What the Capital Stack Actually Means</h2>
+<p class="art-p">The capital stack is simply the hierarchy of all the money used to fund a project, ranked by who gets paid back first if things go sideways. Each layer carries different risk, different cost, and different implications for you as the owner.</p>
+<ul class="art-ul">
+  <li><strong>Senior debt</strong> sits at the top &mdash; the most protected position, typically a conventional bank loan. Because the lender has first claim on your asset, they charge lower rates. This is where the bulk of most deals get financed.</li>
+  <li><strong>Mezzanine financing</strong> fills the gap between senior debt and equity. It carries higher interest rates and may include warrants or other terms that reflect its riskier position in the stack.</li>
+  <li><strong>Equity</strong> is at the bottom &mdash; the last to be repaid, the first to absorb losses. Equity partners take the most risk and therefore demand the highest return. This is also where you start giving away pieces of your business.</li>
+</ul>
+<p class="art-p">For owner-operators expanding into their own facility, the goal is to minimize equity dilution entirely &mdash; and there are government-backed tools specifically designed to help you do exactly that.</p>
+
+<h2 class="art-h2">The SBA 504 Program: The Most Powerful Tool You May Not Be Using</h2>
+<p class="art-p">If you are buying or building an owner-occupied commercial facility, the SBA 504 loan program is likely the single most favorable financing structure available to you. Its mechanics are specifically designed to lower your required down payment while locking in a fixed rate on a significant portion of your debt.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-n">50%</div>
+    <div class="stat-l">Conventional lender &mdash; first mortgage, market-rate terms</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-n">40%</div>
+    <div class="stat-l">Certified Development Company (CDC) &mdash; fixed, below-market rate</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-n">10%</div>
+    <div class="stat-l">Your down payment &mdash; minimum borrower equity injection</div>
+  </div>
 </div>
+
+<p class="art-p">Here is what makes this structure compelling: the CDC portion &mdash; 40% of your total project &mdash; carries a fixed interest rate set below prevailing market rates. That rate is locked for the life of the loan, insulating you from rate volatility on a significant slice of your debt. The conventional lender covers 50% at their terms, and you bring just 10% as your down payment.</p>
+<p class="art-p">In practical terms, this means a project that might require $500,000 out of pocket under conventional financing could require as little as $100,000 under SBA 504 &mdash; freeing the remaining capital to fund equipment, working capital, or simply remain in your business as a buffer.</p>
+
+<div class="hl-box">
+  <p>The SBA 504 program is designed specifically for owner-occupied commercial real estate. If you occupy at least 51% of an existing building or 60% of new construction, you likely qualify. The program is administered through Certified Development Companies in your region &mdash; not directly through the SBA or your bank.</p>
 </div>
+
+<h2 class="art-h2">Conventional Construction Loans: What to Expect Without SBA</h2>
+<p class="art-p">If you pursue conventional commercial construction financing without a government-backed program, the landscape looks materially different. Most conventional lenders will require a down payment in the range of 20&ndash;25% of total project cost. Rates are typically variable or carry shorter fixed periods, and terms are generally shorter than SBA-backed structures.</p>
+<p class="art-p">That is not to say conventional financing is a bad option &mdash; for some borrowers and some projects, it is the faster, simpler path. But you should enter that conversation knowing the baseline so you can make a genuine comparison rather than simply accepting what one lender offers.</p>
+
+<h2 class="art-h2">Sale-Leaseback: Unlocking Capital You Already Own</h2>
+<p class="art-p">If you currently own your facility, you may be sitting on a capital source most business owners overlook entirely: the equity in your existing building. A sale-leaseback lets you sell that building to an investor, then immediately lease it back under a long-term agreement. You convert illiquid real estate equity into cash &mdash; which you can deploy toward your new facility, equipment, or growth initiatives.</p>
+<p class="art-p">The tradeoff is that you give up future appreciation on the old building and take on a lease obligation. Done well, the numbers make sense: you redeploy capital that would otherwise sit idle in bricks and mortar into the actual growth engine of your business. This strategy works best when your business has strong, predictable cash flow and the lease terms are structured at or near current market rents.</p>
+
+<div class="callout">
+  <p>"The question is never just 'how do we fund this?' It's 'how do we fund this in a way that keeps maximum optionality in our hands five years from now?' The capital stack you choose today determines the decisions you get to make tomorrow."</p>
+</div>
+
+<h2 class="art-h2">Equipment Financing as a Parallel Stack</h2>
+<p class="art-p">One of the most practical decisions in structuring your capital stack is keeping your real estate financing and your equipment financing completely separate. These are different assets with different useful lives, and lenders treat them differently for good reason.</p>
+<p class="art-p">Equipment financing is typically asset-secured against the equipment itself, carries shorter terms (often 5&ndash;7 years), and does not need to compete with your real estate loan for collateral. By running these as parallel stacks rather than bundling everything into one construction loan, you preserve cleaner collateral positions for each lender and often access better terms on both.</p>
+<ul class="art-ul">
+  <li><strong>Real estate loan:</strong> secured by the property, long term (typically 20&ndash;25 years under SBA 504)</li>
+  <li><strong>Equipment financing:</strong> secured by the equipment, shorter term, often with manufacturers or specialty lenders</li>
+  <li><strong>Working capital line:</strong> a separate revolving facility that keeps liquidity accessible without touching real estate collateral</li>
+</ul>
+
+<h2 class="art-h2">What Lenders Are Actually Evaluating</h2>
+<p class="art-p">Before a lender approves any commercial real estate loan, they are running a specific set of numbers. Understanding what they are looking for lets you walk into those conversations prepared &mdash; and lets you identify and address weaknesses before they become deal-killers.</p>
+<p class="art-p"><strong>Debt Service Coverage Ratio (DSCR)</strong> is the number lenders care about most. It measures your net operating income against your total annual debt payments. Most commercial lenders require a minimum DSCR of 1.20x to 1.25x &mdash; meaning your business generates at least $1.20 in income for every $1.00 of debt payment. If your DSCR falls below that threshold, expect pushback or a request to restructure the deal.</p>
+<p class="art-p"><strong>Global cash flow analysis</strong> goes further. Lenders look at all the income and all the debt obligations across every entity you own, not just the borrowing entity. If you carry obligations in other businesses or personal real estate, those factor into the calculation.</p>
+<p class="art-p"><strong>Personal guarantee</strong> is generally required for any business with a net worth under approximately $5 million. This is standard underwriting practice, not a reflection of weakness in your application &mdash; but it means your personal financial picture matters as much as your business financials.</p>
+
+<h2 class="art-h2">The Equity Trap: Why Selling Ownership to Fund Real Estate Almost Never Makes Sense</h2>
+<p class="art-p">When business owners feel stuck on the financing side, they sometimes consider bringing in equity partners to fund a facility expansion. For owner-operators, this is almost always a mistake &mdash; and here is why.</p>
+<p class="art-p">Real estate, especially owner-occupied commercial real estate, is a long-duration, relatively stable asset. It does not need to generate the 20&ndash;30% returns equity investors typically require. When you bring equity into a deal that can be financed with debt, you are paying an equity price for what is fundamentally a debt-level risk &mdash; a costly trade.</p>
+<p class="art-p">More importantly, you are giving up a percentage of your business permanently in exchange for capital that you could have accessed through SBA 504 with a 10% down payment. That dilution does not disappear when the building is paid off. The equity partner remains.</p>
+<p class="art-p">Reserve equity for situations where debt genuinely cannot solve the problem: early-stage ventures, businesses without established cash flow, or growth strategies that require shared risk. For profitable, established businesses acquiring their own facility, debt is almost always the right tool.</p>
+
+<h2 class="art-h2">Structuring for Operational Flexibility</h2>
+<p class="art-p">The goal of your capital stack is not just to close the deal &mdash; it is to leave you positioned to make good decisions for the next decade. A few principles to carry into every financing conversation:</p>
+<ul class="art-ul">
+  <li>Maximize fixed-rate exposure where available &mdash; the SBA 504 CDC portion is a meaningful example of this in practice</li>
+  <li>Preserve working capital; a facility that is perfectly financed but leaves no cash reserve creates fragility, not strength</li>
+  <li>Keep debt instruments separate by asset class to protect collateral positions and simplify future refinancing</li>
+  <li>Stress-test your DSCR at multiple revenue scenarios, not just your current run rate</li>
+  <li>Avoid restrictive covenants that limit distributions or hiring decisions without lender approval, unless they are truly unavoidable</li>
+</ul>
+<p class="art-p">The businesses that expand successfully are not necessarily those with the most capital &mdash; they are the ones who structured that capital in a way that kept decision-making authority exactly where it belongs: with the owner.</p>
+
+<div class="divider"></div>
+
+<div class="cites">
+  <div class="cites-h">Sources &amp; References</div>
+  <ol>
+    <li>U.S. Small Business Administration &mdash; SBA 504 Loan Program structure and eligibility overview. <em>sba.gov</em></li>
+    <li>DSCR minimums of 1.20&ndash;1.25x reflect standard underwriting guidelines across commercial real estate lenders. Individual lender requirements vary by institution, market, and borrower profile.</li>
+    <li>Personal guarantee thresholds and global cash flow analysis methodology are standard practices in commercial lending underwriting; requirements vary by lender.</li>
+  </ol>
+</div>
+
+<div class="art-cta">
+  <h3>Know Your Numbers Before You Talk to a Lender</h3>
+  <p>Our Expansion Readiness Brief helps you understand your financing position, clarify your capital stack options, and walk into lender conversations prepared &mdash; not reactive.</p>
+  <a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+</div>
+
+</div>
+
 <footer class="ft"><div><div class="ft-w">Blue<span>Sky</span></div><a href="mailto:Connect@BlueSky.RealEstate" class="ft-e">Connect@BlueSky.RealEstate</a><span class="ft-a">480 Duke Drive Suite 200, Franklin, TN 37067</span></div><div class="ft-c">&copy; 2026 BlueSky Development Services</div></footer>
 <script>document.querySelectorAll(".n-links a:not(.n-cta)").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nl").classList.remove("open")})})</script>
 </body></html>

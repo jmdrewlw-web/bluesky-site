@@ -13,26 +13,120 @@
 .art-hero{padding:7rem 1.5rem 3rem;background:var(--black);text-align:center;position:relative}.art-hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.15),transparent)}.art-phase{font-size:.48rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:.6rem}.art-hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;line-height:1.08;color:#fff;letter-spacing:-.025em;margin-bottom:.4rem}.art-hero p{font-size:.95rem;font-weight:400;color:var(--sl);max-width:500px;margin:0 auto}
 .art-body{max-width:680px;margin:0 auto;padding:3rem 1.5rem 4rem}
 .art-back{display:inline-flex;align-items:center;gap:.4rem;font-size:.6rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sky);margin-bottom:2rem;transition:gap .3s var(--e)}.art-back:hover{gap:.7rem}
-.art-body .coming{text-align:center;padding:2rem 0}.art-body .coming h2{font-size:1.3rem;font-weight:700;color:var(--td);margin-bottom:.5rem}.art-body .coming p{font-size:.9rem;color:var(--tb);line-height:1.7;margin-bottom:1.5rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f);font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#5AADE8,#3B8DD4 50%,#2E7BC0);padding:.85rem 1.4rem;border-radius:6px;box-shadow:0 4px 15px rgba(74,159,229,.3);transition:all .4s var(--e)}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(74,159,229,.4)}
 .ft{background:var(--black);padding:2.5rem 1.5rem;text-align:center;border-top:1px solid rgba(255,255,255,.04)}.ft-w{font-size:.85rem;font-weight:800;color:rgba(255,255,255,.35);margin-bottom:.5rem}.ft-w span{color:rgba(74,159,229,.5)}.ft-e{display:block;font-size:.78rem;color:rgba(154,172,191,.6);margin-bottom:.25rem}.ft-a{font-size:.62rem;color:rgba(154,172,191,.35);margin-bottom:.6rem;display:block}.ft-c{font-size:.48rem;color:rgba(154,172,191,.2)}
 @media(min-width:768px){.nav{padding:1.2rem 4rem}.n-links{display:flex}.n-tog{display:none}.n-w{font-size:1.5rem}.n-d{height:28px}.n-s-top{font-size:.44rem}.n-s-bot{font-size:.44rem}.art-hero{padding:8rem 4rem 3.5rem}.art-body{padding:3.5rem 4rem 5rem}.ft{padding:3rem 4rem;display:flex;justify-content:space-between;align-items:flex-end;text-align:left}}
+.art-intro{font-size:1.02rem;line-height:1.82;color:#4A5568;margin-bottom:2rem}
+.art-h2{font-size:1.18rem;font-weight:700;color:#0A1628;letter-spacing:-.02em;margin:2.25rem 0 .65rem;padding-top:2rem;border-top:1px solid rgba(74,159,229,.1)}
+.art-p{font-size:.92rem;line-height:1.78;color:#4A5568;margin-bottom:.9rem}
+.art-ul{margin:.5rem 0 1rem 0;list-style:none;padding:0}
+.art-ul li{font-size:.9rem;line-height:1.68;color:#4A5568;margin-bottom:.45rem;padding-left:1.2rem;position:relative}
+.art-ul li::before{content:"\2192";position:absolute;left:0;color:#4A9FE5;font-size:.8rem;top:.05rem}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.75rem;margin:1.75rem 0}
+.stat-card{background:#F0F6FD;border-radius:8px;padding:1rem 1.1rem;border:1px solid rgba(74,159,229,.1)}
+.stat-n{font-size:1.45rem;font-weight:800;color:#4A9FE5;letter-spacing:-.03em;line-height:1.1}
+.stat-l{font-size:.69rem;font-weight:500;color:#4A5568;margin-top:.2rem;line-height:1.35}
+.callout{background:#06101F;border-radius:10px;padding:1.4rem 1.6rem;margin:1.75rem 0}
+.callout p{font-size:.91rem;font-weight:500;color:rgba(255,255,255,.82);line-height:1.65;margin:0;font-style:italic}
+.hl-box{border-left:3px solid #4A9FE5;background:#F7FAFD;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0}
+.hl-box p{font-size:.87rem;line-height:1.72;color:#4A5568;margin:0}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.2),transparent);margin:2rem 0}
+.cites{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(0,0,0,.06)}
+.cites-h{font-size:.54rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#9AACBF;margin-bottom:.65rem}
+.cites ol{margin-left:1rem}
+.cites li{font-size:.66rem;color:#9AACBF;line-height:1.6;margin-bottom:.25rem}
+.art-cta{background:#06101F;border-radius:12px;padding:2rem 1.75rem;text-align:center;margin-top:2.5rem}
+.art-cta h3{font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:.4rem;letter-spacing:-.01em}
+.art-cta p{font-size:.83rem;color:#7A8A9F;margin-bottom:1.2rem;line-height:1.6}
 </style></head><body>
 <nav class="nav"><a href="/" class="n-logo"><div class="n-w">Blue<span>Sky</span></div><div class="n-d"></div><div class="n-s"><span class="n-s-top">Development</span><span class="n-s-bot">Services</span></div></a><div class="n-tog" onclick="document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></div><ul class="n-links" id="nl"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/expansion-intelligence" class="act">Insights</a></li><li><a href="mailto:Connect@BlueSky.RealEstate">Contact</a></li><li><a href="/expansion-readiness-brief" class="n-cta">Get Started</a></li></ul></nav>
+
 <section class="art-hero">
 <div class="art-phase"><span class="pl"></span>Realize<span class="pl r"></span></div>
-<h1>Exit Strategy & Facility Valuation</h1>
+<h1>Exit Strategy &amp; Facility Valuation</h1>
 <p>How Facility Quality Affects Business Valuation</p>
 </section>
+
 <div class="art-body">
 <a href="/expansion-intelligence" class="art-back"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to Expansion Intelligence</a>
-<div class="coming">
-<h2>Full article coming soon.</h2>
-<p>This framework is part of our Expansion Intelligence library. The full-length article with actionable frameworks, real-world examples, and downloadable resources is being finalized.</p>
-<p>In the meantime, get a tailored assessment for your expansion.</p>
-<a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+
+<p class="art-intro">Most business owners spend years thinking about how to grow their practice or company, and almost no time thinking about how to exit it. That asymmetry is expensive. The decisions you make about your facility today &mdash; whether to own or lease, how you structure your real estate, the quality and condition of your buildout &mdash; have a direct and often underestimated impact on what your business is worth when it comes time to sell. Understanding that connection early means you can make decisions now that compound in your favor at the exit.</p>
+
+<h2 class="art-h2">Why Facility Decisions Show Up in Enterprise Value</h2>
+<p class="art-p">When a buyer or private equity group evaluates a practice or service business, they are not just buying your revenue &mdash; they are buying a system they intend to operate and grow. The facility is part of that system. A well-located, purpose-built, owner-occupied facility sends a fundamentally different signal than a cramped leased suite with an expiring lease and a landlord who has not agreed to any assignment terms.</p>
+<p class="art-p">Facility risk shows up in several places in a deal. It can affect the multiple a buyer is willing to pay on your EBITDA. It can create contingencies that delay closing or reduce purchase price. It can make financing your buyer's acquisition harder if lenders view the facility situation as uncertain. And it can become a negotiating chip that buyers use aggressively if they identify problems during due diligence that you had not surfaced yourself.</p>
+
+<h2 class="art-h2">Owned Real Estate: The Dual Asset Advantage</h2>
+<p class="art-p">Owner-operators who own their facility have two assets to monetize at exit, not one. The business and the real estate can be sold together, sold separately, or structured through a sale-leaseback that transfers the building to the buyer while you retain operational continuity. Each structure has different tax implications, different cash proceeds, and different ongoing obligations.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-n">1.5&ndash;2&times;</div>
+    <div class="stat-l">Typical real estate value as a multiple of annual rent for owner-occupied medical facilities</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-n">15&ndash;20%</div>
+    <div class="stat-l">Premium buyers often pay for practices with controlled, long-term real estate vs. short leases</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-n">Cap rate</div>
+    <div class="stat-l">Medical real estate commonly trades at 5.5&ndash;7% cap rates, varying by market and credit</div>
+  </div>
 </div>
+
+<p class="art-p">The simplest structure is selling both the business and the real estate together. The buyer acquires everything and owns the facility outright. This typically yields the cleanest transaction but may not optimize the tax treatment for you as a seller.</p>
+<p class="art-p">A sale-leaseback is often more sophisticated and more valuable. In this structure, you sell the real estate to an investor at closing, execute a long-term lease back to the acquiring entity, and receive the real estate proceeds separately from the business sale proceeds. This can be highly advantageous because real estate proceeds may be taxed at capital gains rates, while business sale proceeds are often ordinary income depending on how the deal is structured.</p>
+
+<div class="hl-box">
+  <p>Engage a tax advisor and a transaction attorney at least 12 months before a planned exit. The structure of a sale-leaseback, asset sale, or stock sale has permanent tax consequences that cannot be undone after closing. Planning ahead gives you choices; waiting until you are in a deal gives you less leverage.</p>
 </div>
+
+<h2 class="art-h2">Lease Risk: What Buyers and Their Lenders Scrutinize</h2>
+<p class="art-p">If you lease your facility, your lease is one of the first documents a sophisticated buyer will request. They are looking for several specific things, and problems in any of them can complicate or kill a transaction.</p>
+<ul class="art-ul">
+  <li><strong>Remaining term:</strong> A lease with fewer than three years remaining at closing is a significant liability. Buyers and their lenders want to see enough remaining term to stabilize the acquisition before having to negotiate renewal.</li>
+  <li><strong>Assignment clause:</strong> Does your lease allow you to assign it to a buyer without landlord consent, or with a reasonable consent standard? If the landlord can withhold consent unreasonably, a sale becomes contingent on landlord cooperation &mdash; a leverage position you do not want them in.</li>
+  <li><strong>Renewal options:</strong> Documented options to renew at defined terms give the buyer and their lender predictability. Vague renewal rights or pure landlord discretion on renewal pricing introduce risk that buyers discount.</li>
+  <li><strong>Escalation terms:</strong> Buyers model lease escalations into their go-forward cash flows. Aggressive escalations compress margins and reduce what buyers will pay for the business.</li>
+</ul>
+
+<h2 class="art-h2">Facility Condition and the Buyer's Renovation Discount</h2>
+<p class="art-p">A facility that is dated, poorly maintained, or functionally mismatched with how your business has evolved gives buyers ammunition to discount their offer. Their logic is simple: if they have to spend $400,000 renovating immediately after acquisition, that cost comes out of what they are willing to pay for the business. They are not wrong to think this way &mdash; the question is whether you want to absorb that discount or invest in the facility before going to market.</p>
+<p class="art-p">This calculus is not always obvious. A full renovation before exit is rarely the right move. A targeted investment in the highest-visibility elements &mdash; patient reception areas, technology infrastructure, equipment that is visibly current &mdash; can return multiples of its cost in the form of a higher offered multiple and reduced due diligence friction.</p>
+
+<div class="callout">
+  <p>"The facility is part of the story a buyer tells themselves about what they are buying. A practice in a purpose-built, well-maintained facility says: this owner ran a real business. A practice in a deteriorating leased suite says: this owner was riding it out. Both of those stories affect the price."</p>
+</div>
+
+<h2 class="art-h2">Building for Exit From Day One</h2>
+<p class="art-p">The most valuable thing you can take from this framework is a different orientation toward facility decisions. Every major facility choice &mdash; own vs. lease, buildout quality, lease term negotiation, renovation timing &mdash; should be evaluated not just against today's operational needs but against how it will read to a buyer five or ten years from now.</p>
+<ul class="art-ul">
+  <li>Negotiate lease terms as if a buyer's attorney will be reading every clause with hostile intent &mdash; because they will</li>
+  <li>Maintain the facility as a capital asset, not a sunk cost &mdash; documented maintenance history and recent upgrades are tangible value at exit</li>
+  <li>If you own, understand the current market value of your real estate and factor that into your exit model</li>
+  <li>Consider the exit implications before agreeing to any personal guarantee on a lease that would survive a business sale</li>
+</ul>
+<p class="art-p">The operators who extract the most value at exit are not necessarily those with the highest revenue. They are the ones who managed their facility decisions with the same rigor they applied to clinical quality and patient experience &mdash; because they understood that a buyer sees all of it.</p>
+
+<div class="divider"></div>
+
+<div class="cites">
+  <div class="cites-h">Sources &amp; References</div>
+  <ol>
+    <li>Medical real estate cap rate ranges reflect market data from healthcare REIT transaction reports and commercial real estate industry publications. Cap rates vary materially by market, credit quality of tenant, and lease structure.</li>
+    <li>Business sale multiple premiums for controlled real estate are based on transaction experience and industry survey data from healthcare M&amp;A advisors. Actual premiums vary by deal structure and buyer type.</li>
+    <li>Tax treatment of sale-leaseback proceeds and business sale proceeds is highly dependent on deal structure, entity type, and applicable tax law. Consult a qualified tax advisor before structuring any transaction.</li>
+  </ol>
+</div>
+
+<div class="art-cta">
+  <h3>Planning an Exit in the Next 3&ndash;7 Years?</h3>
+  <p>Your facility decisions today shape what your business is worth at the closing table. An Expansion Readiness Brief can help you understand where you stand and what to optimize now.</p>
+  <a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+</div>
+
+</div>
+
 <footer class="ft"><div><div class="ft-w">Blue<span>Sky</span></div><a href="mailto:Connect@BlueSky.RealEstate" class="ft-e">Connect@BlueSky.RealEstate</a><span class="ft-a">480 Duke Drive Suite 200, Franklin, TN 37067</span></div><div class="ft-c">&copy; 2026 BlueSky Development Services</div></footer>
 <script>document.querySelectorAll(".n-links a:not(.n-cta)").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nl").classList.remove("open")})})</script>
 </body></html>

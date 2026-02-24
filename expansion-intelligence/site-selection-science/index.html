@@ -13,26 +13,121 @@
 .art-hero{padding:7rem 1.5rem 3rem;background:var(--black);text-align:center;position:relative}.art-hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.15),transparent)}.art-phase{font-size:.48rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:.6rem}.art-hero h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;line-height:1.08;color:#fff;letter-spacing:-.025em;margin-bottom:.4rem}.art-hero p{font-size:.95rem;font-weight:400;color:var(--sl);max-width:500px;margin:0 auto}
 .art-body{max-width:680px;margin:0 auto;padding:3rem 1.5rem 4rem}
 .art-back{display:inline-flex;align-items:center;gap:.4rem;font-size:.6rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--sky);margin-bottom:2rem;transition:gap .3s var(--e)}.art-back:hover{gap:.7rem}
-.art-body .coming{text-align:center;padding:2rem 0}.art-body .coming h2{font-size:1.3rem;font-weight:700;color:var(--td);margin-bottom:.5rem}.art-body .coming p{font-size:.9rem;color:var(--tb);line-height:1.7;margin-bottom:1.5rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f);font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#5AADE8,#3B8DD4 50%,#2E7BC0);padding:.85rem 1.4rem;border-radius:6px;box-shadow:0 4px 15px rgba(74,159,229,.3);transition:all .4s var(--e)}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(74,159,229,.4)}
 .ft{background:var(--black);padding:2.5rem 1.5rem;text-align:center;border-top:1px solid rgba(255,255,255,.04)}.ft-w{font-size:.85rem;font-weight:800;color:rgba(255,255,255,.35);margin-bottom:.5rem}.ft-w span{color:rgba(74,159,229,.5)}.ft-e{display:block;font-size:.78rem;color:rgba(154,172,191,.6);margin-bottom:.25rem}.ft-a{font-size:.62rem;color:rgba(154,172,191,.35);margin-bottom:.6rem;display:block}.ft-c{font-size:.48rem;color:rgba(154,172,191,.2)}
 @media(min-width:768px){.nav{padding:1.2rem 4rem}.n-links{display:flex}.n-tog{display:none}.n-w{font-size:1.5rem}.n-d{height:28px}.n-s-top{font-size:.44rem}.n-s-bot{font-size:.44rem}.art-hero{padding:8rem 4rem 3.5rem}.art-body{padding:3.5rem 4rem 5rem}.ft{padding:3rem 4rem;display:flex;justify-content:space-between;align-items:flex-end;text-align:left}}
+.art-intro{font-size:1.02rem;line-height:1.82;color:#4A5568;margin-bottom:2rem}
+.art-h2{font-size:1.18rem;font-weight:700;color:#0A1628;letter-spacing:-.02em;margin:2.25rem 0 .65rem;padding-top:2rem;border-top:1px solid rgba(74,159,229,.1)}
+.art-p{font-size:.92rem;line-height:1.78;color:#4A5568;margin-bottom:.9rem}
+.art-ul{margin:.5rem 0 1rem 0;list-style:none;padding:0}
+.art-ul li{font-size:.9rem;line-height:1.68;color:#4A5568;margin-bottom:.45rem;padding-left:1.2rem;position:relative}
+.art-ul li::before{content:"\2192";position:absolute;left:0;color:#4A9FE5;font-size:.8rem;top:.05rem}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.75rem;margin:1.75rem 0}
+.stat-card{background:#F0F6FD;border-radius:8px;padding:1rem 1.1rem;border:1px solid rgba(74,159,229,.1)}
+.stat-n{font-size:1.45rem;font-weight:800;color:#4A9FE5;letter-spacing:-.03em;line-height:1.1}
+.stat-l{font-size:.69rem;font-weight:500;color:#4A5568;margin-top:.2rem;line-height:1.35}
+.callout{background:#06101F;border-radius:10px;padding:1.4rem 1.6rem;margin:1.75rem 0}
+.callout p{font-size:.91rem;font-weight:500;color:rgba(255,255,255,.82);line-height:1.65;margin:0;font-style:italic}
+.hl-box{border-left:3px solid #4A9FE5;background:#F7FAFD;border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1.5rem 0}
+.hl-box p{font-size:.87rem;line-height:1.72;color:#4A5568;margin:0}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(74,159,229,.2),transparent);margin:2rem 0}
+.cites{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(0,0,0,.06)}
+.cites-h{font-size:.54rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#9AACBF;margin-bottom:.65rem}
+.cites ol{margin-left:1rem}
+.cites li{font-size:.66rem;color:#9AACBF;line-height:1.6;margin-bottom:.25rem}
+.art-cta{background:#06101F;border-radius:12px;padding:2rem 1.75rem;text-align:center;margin-top:2.5rem}
+.art-cta h3{font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:.4rem;letter-spacing:-.01em}
+.art-cta p{font-size:.83rem;color:#7A8A9F;margin-bottom:1.2rem;line-height:1.6}
 </style></head><body>
 <nav class="nav"><a href="/" class="n-logo"><div class="n-w">Blue<span>Sky</span></div><div class="n-d"></div><div class="n-s"><span class="n-s-top">Development</span><span class="n-s-bot">Services</span></div></a><div class="n-tog" onclick="document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></div><ul class="n-links" id="nl"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/expansion-intelligence" class="act">Insights</a></li><li><a href="mailto:Connect@BlueSky.RealEstate">Contact</a></li><li><a href="/expansion-readiness-brief" class="n-cta">Get Started</a></li></ul></nav>
+
 <section class="art-hero">
 <div class="art-phase"><span class="pl"></span>Evaluate<span class="pl r"></span></div>
 <h1>Site Selection Science</h1>
 <p>The Data-Driven Location Strategy</p>
 </section>
+
 <div class="art-body">
 <a href="/expansion-intelligence" class="art-back"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to Expansion Intelligence</a>
-<div class="coming">
-<h2>Full article coming soon.</h2>
-<p>This framework is part of our Expansion Intelligence library. The full-length article with actionable frameworks, real-world examples, and downloadable resources is being finalized.</p>
-<p>In the meantime, get a tailored assessment for your expansion.</p>
-<a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+
+<p class="art-intro">Site selection is the decision that most directly determines whether an expansion reaches its revenue potential &mdash; and it is also the decision where operators are most likely to substitute intuition for analysis. A location that feels right is not the same as a location that the data supports. The good news is that the relevant data is largely accessible, the analytical framework is straightforward, and applying it consistently produces demonstrably better outcomes than driving around looking for a corner that feels busy.</p>
+
+<h2 class="art-h2">The Trade Area: Where Analysis Begins</h2>
+<p class="art-p">Every site evaluation starts with defining the trade area &mdash; the geographic zone from which your facility will realistically draw patients or customers. Trade areas are not circles drawn arbitrarily on a map. They are shaped by drive time, traffic barriers, competition, and the density of your target demographic in different directions from the site.</p>
+<p class="art-p">For most healthcare and professional service businesses, the primary trade area is bounded by a 5&ndash;10 minute drive time. Roughly 80% of patients will come from within this zone. The secondary trade area extends to 15&ndash;20 minutes and contributes the remaining 20%. Understanding this geography is the foundation of everything else in the analysis &mdash; population data, competitive mapping, and demographic fit are all calculated relative to the trade area, not to the site itself.</p>
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-n">5&ndash;10 min</div>
+    <div class="stat-l">Primary trade area in drive time for healthcare and specialty services</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-n">~80%</div>
+    <div class="stat-l">Share of patients typically originating within the primary drive-time zone</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-n">5-yr trend</div>
+    <div class="stat-l">Population growth trajectory matters as much as current population density</div>
+  </div>
 </div>
+
+<h2 class="art-h2">Demographic Fit: The Data That Actually Matters</h2>
+<p class="art-p">Population density is necessary but not sufficient. The relevant question is whether the population in your trade area matches the demographic profile of your target patient or customer. Different service types have materially different demographic requirements, and a high-density trade area that skews wrong on age, income, or insurance mix can underperform a lower-density trade area with strong demographic alignment.</p>
+<p class="art-p">For healthcare practices specifically, the key demographic variables to analyze include: median household income and its distribution (affecting both willingness to pay and insurance coverage types), age distribution relative to your service focus, population growth rate and the source of that growth (organic vs. in-migration), and the employment base (affecting both insurance coverage and scheduling patterns).</p>
+<p class="art-p">Census Bureau data, American Community Survey data, and commercial demographic providers all provide this information at the census tract level and can be aggregated to any trade area geometry. This analysis is not expensive and is not technically complex &mdash; it simply requires that someone actually does it before selecting a site.</p>
+
+<h2 class="art-h2">Competitive Analysis: Mapping What You Are Walking Into</h2>
+<p class="art-p">Competitive analysis in site selection answers a specific question: given the population in this trade area and the competitors already serving it, is there an unmet need large enough to support my facility? This is different from asking whether there are competitors &mdash; some competition is actually a healthy signal that demand exists. The question is whether the market is oversaturated relative to the population it serves.</p>
+<ul class="art-ul">
+  <li>Map every direct competitor within your primary and secondary trade areas by address, estimated size, and years in operation</li>
+  <li>Estimate the population-to-provider ratio in the trade area and compare it to regional or national benchmarks for your service type</li>
+  <li>Investigate the capacity utilization of existing competitors where possible &mdash; long wait times for appointments are a demand signal; recent closures are a warning sign</li>
+  <li>Note any competitors that appear to be well-funded or actively expanding; a competitor in the middle of a buildout changes the competitive picture before your doors open</li>
+</ul>
+
+<div class="hl-box">
+  <p>Competitive analysis is not about avoiding competition. It is about understanding the demand-to-supply balance in a specific geography. Some of the best locations for expansion are in trade areas that have strong demand but an underserved population &mdash; which is only visible if you actually map it.</p>
 </div>
+
+<h2 class="art-h2">Physical Site Factors: Access, Visibility, and Parking</h2>
+<p class="art-p">Demographic and competitive analysis tells you whether a trade area can support your facility. Physical site analysis tells you whether a specific parcel within that trade area will actually let patients find you, reach you, and park once they arrive. These factors matter more than most operators expect, and their impact on production is nearly impossible to model out once a site is built.</p>
+<p class="art-p"><strong>Access and ingress/egress</strong> determines how easy it is for patients to turn into your facility from the primary traffic corridor. A site on a divided highway with limited median breaks, or a site accessible only from a side street with restricted turning movements, functionally reduces your accessible population &mdash; even if the demographics within the radius are excellent.</p>
+<p class="art-p"><strong>Visibility</strong> affects new patient acquisition continuously over your facility&rsquo;s lifespan. A facility that is clearly visible from the primary traffic corridor generates passive awareness and recognition that a hidden campus never produces, regardless of how much you spend on signage at the driveway entrance.</p>
+<p class="art-p"><strong>Parking</strong> is a hard constraint that many operators underestimate until the municipality reviews their site plan. Healthcare facilities typically require 4&ndash;6 parking spaces per 1,000 square feet of building under local zoning codes &mdash; significantly more than general office. Sites with insufficient parking area cannot be approved for medical use without variances, which are discretionary and not guaranteed.</p>
+
+<div class="callout">
+  <p>"We have evaluated hundreds of sites, and the mistakes we see most often are not about the wrong market &mdash; they are about choosing the right market and then picking the wrong corner within it. The final half-mile of site selection is where the data stops being a shortcut and starts being a discipline."</p>
+</div>
+
+<h2 class="art-h2">The Development Pipeline: Building for the Future, Not the Present</h2>
+<p class="art-p">A site analysis that only looks at current conditions is incomplete. The trade area you are evaluating will look different in five years based on what is being approved and built today. Understanding the local development pipeline &mdash; new residential subdivisions, commercial developments, road improvements, and employer relocations &mdash; provides a leading indicator of future demand that current population data cannot capture.</p>
+<ul class="art-ul">
+  <li>Review the local municipality&rsquo;s comprehensive plan and zoning map for large-scale developments in the approval pipeline</li>
+  <li>Check with the state DOT for road widening, interchange, or access improvement projects within your trade area</li>
+  <li>Identify major employers moving into or out of the area &mdash; both affect your patient population composition and insurance mix</li>
+  <li>Review recent building permit data to understand whether residential growth in the area is accelerating or slowing</li>
+</ul>
+<p class="art-p">This forward-looking layer of analysis is what separates site selection that optimizes for a 5-year horizon from site selection that only optimizes for year one. A facility built in a market that is growing toward you will outperform its initial projections. A facility built in a market that is plateauing or declining has no way to grow its way out of a bad initial assumption.</p>
+
+<div class="divider"></div>
+
+<div class="cites">
+  <div class="cites-h">Sources &amp; References</div>
+  <ol>
+    <li>Trade area drive-time parameters and patient origination ratios reflect standard healthcare facility location analysis methodology used by healthcare real estate developers and market consultants.</li>
+    <li>Demographic data sources referenced include the U.S. Census Bureau American Community Survey (ACS) and commercial demographic data providers. Data is available at census tract and block group level for trade area analysis.</li>
+    <li>Parking ratio requirements of 4&ndash;6 spaces per 1,000 sf reflect typical municipal zoning standards for medical office uses; actual requirements vary by jurisdiction and use type.</li>
+  </ol>
+</div>
+
+<div class="art-cta">
+  <h3>Evaluate Your Target Sites With Rigor</h3>
+  <p>Our Expansion Readiness Brief includes a structured review of your site selection criteria and trade area &mdash; so you choose a location based on data, not instinct.</p>
+  <a href="/expansion-readiness-brief" class="btn">Start Your Expansion Brief</a>
+</div>
+
+</div>
+
 <footer class="ft"><div><div class="ft-w">Blue<span>Sky</span></div><a href="mailto:Connect@BlueSky.RealEstate" class="ft-e">Connect@BlueSky.RealEstate</a><span class="ft-a">480 Duke Drive Suite 200, Franklin, TN 37067</span></div><div class="ft-c">&copy; 2026 BlueSky Development Services</div></footer>
 <script>document.querySelectorAll(".n-links a:not(.n-cta)").forEach(function(a){a.addEventListener("click",function(){document.getElementById("nl").classList.remove("open")})})</script>
 </body></html>
